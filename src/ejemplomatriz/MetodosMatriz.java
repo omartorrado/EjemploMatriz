@@ -49,10 +49,10 @@ public class MetodosMatriz {
                 sumaNotas+=notas[f][c];
             }
         }
-        //return sumaNotas/numeroDeNotas;
+        return sumaNotas/numeroDeNotas;
         //tb podriamos usar esto. notas.length nos da el numero de filas
         //y notas[0] el numero de columnas(si el nº de columnas fuese diferente 
         //para cada fila este metodo no nos serviria)
-        return sumaNotas/(notas.length*notas[0].length);
+        //return sumaNotas/(notas.length*notas[0].length);
     }
 }
