@@ -19,8 +19,11 @@ public class EjemploMatriz {
     public static void main(String[] args) {
         // TODO code application logic here
         MetodosMatriz matriz1=new MetodosMatriz();
-        matriz1.cargarMatriz();
+        //matriz1.cargarMatriz();
         matriz1.mostrarMatriz();
-        System.out.println(matriz1.notaMedia());
+        matriz1.calcularMediaNotasPorAlumno();
+        matriz1.mostrarMediaPorAlumno();
+        matriz1.calcularNotaMediaPorModulo();
+        matriz1.mostrarMediaPorModulo();
     }
 }
