@@ -26,7 +26,7 @@ public class MetodosMatriz {
     int [][] notas= new int [filas][columnas];
     
     public int pedirTamaño(String tipo){
-        return Integer.parseInt(JOptionPane.showInputDialog("Indica el número de "+tipo))
+        return Integer.parseInt(JOptionPane.showInputDialog("Indica el número de "+tipo));
     }
     
     public void cargarMatriz() {
