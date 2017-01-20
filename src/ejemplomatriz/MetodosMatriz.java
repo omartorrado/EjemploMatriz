@@ -12,14 +12,22 @@ import javax.swing.JOptionPane;
  * @author otorradomiguez
  */
 public class MetodosMatriz {
-
+    int filas=pedirTamaño("filas"),columnas=pedirTamaño("columnas");
+    
     //int[][] notas = new int[3][4];
-    float[] notasMediasAlumno = new float[3];
-    float[] notasMediasModulo = new float[4];
+    float[] notasMediasAlumno = new float[filas];
+    float[] notasMediasModulo = new float[columnas];
     
     //usador para no tener que crear la matriz todo el rato. Sino usariamos la
     //variable notas comentada arriba
-    int[][] notas={{4,6,5,8},{3,9,6,7},{6,8,9,1}};
+    //int[][] notas={{4,6,5,8},{3,9,6,7},{6,8,9,1}};
+    
+    
+    int [][] notas= new int [filas][columnas];
+    
+    public int pedirTamaño(String tipo){
+        return Integer.parseInt(JOptionPane.showInputDialog("Indica el número de "+tipo))
+    }
     
     public void cargarMatriz() {
         for (int f = 0; f < notas.length; f++) {
